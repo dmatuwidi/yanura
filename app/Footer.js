@@ -1,7 +1,6 @@
 import React from 'react'
-import Image from 'next/image'
 
-const Footer = () => {
+export default function Footer() {
   return (
     <footer class="bg-azure-radiance-600">
       <div class="flex justify-evenly p-10 text-center">
@@ -13,5 +12,3 @@ const Footer = () => {
     </footer>
   )
 }
-
-export default Footer
