@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
-export default function Navbar() {
+export default function NavbarApp() {
   const [isOpen, setIsOpen] = useState(false)
 
   const handleClick = () => {
@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <nav>
-      <div class="flex flex-col fixed w-full drop-shadow-sm bg-white">
+      <div class="flex flex-col fixed w-full drop-shadow-sm bg-white z-10">
         {/* main Navbar */}
         <div class="flex p-6 justify-between">
           <div class="my-auto">
