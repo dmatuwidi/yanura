@@ -32,7 +32,7 @@ export default function Home() {
             <p class="text-2xl"></p>
           </div>
           <div class="grid grid-cols-2 lg:grid-cols-4 grid-flow-row-dense gap-8 my-12 place-items-center">
-            <div class="relative border-2 drop-shadow-sm rounded-lg aspect-square w-48 sm:w-64 md:w-72 lg:w-56 xl:w-72">
+            <div class="relative border-2 border-azure-radiance-600 drop-shadow-md rounded-lg aspect-square w-48 sm:w-64 md:w-72 lg:w-56 xl:w-72">
               <div class="p-6 w-full h-full hover:opacity-0 transition-opacity bg-white rounded-lg flex flex-col justify-end">
                 <h2 class="text-2xl sm:text-3xl font-medium">🌟<br></br>AI-Driven</h2>
               </div>
@@ -42,7 +42,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div class="relative border-2 drop-shadow-sm rounded-lg aspect-square w-48 sm:w-64 md:w-72 lg:w-56 xl:w-72">
+            <div class="relative border-2 border-azure-radiance-600 drop-shadow-md rounded-lg aspect-square w-48 sm:w-64 md:w-72 lg:w-56 xl:w-72">
               <div class="p-6 w-full h-full hover:opacity-0 transition-opacity bg-white rounded-lg flex flex-col justify-end">
                 <h2 class="text-2xl sm:text-3xl font-medium">💫<br></br>Curated</h2>
               </div>
@@ -53,7 +53,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div class="relative border-2 drop-shadow-sm rounded-lg aspect-square w-48 sm:w-64 md:w-72 lg:w-56 xl:w-72">
+            <div class="relative border-2 border-azure-radiance-600 drop-shadow-md rounded-lg aspect-square w-48 sm:w-64 md:w-72 lg:w-56 xl:w-72">
               <div class="p-6 w-full h-full hover:opacity-0 transition-opacity bg-white rounded-lg flex flex-col justify-end">
                 <h2 class="text-2xl sm:text-3xl font-medium">🪽<br></br>Responsive</h2>
               </div>
@@ -63,7 +63,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div class="relative border-2 drop-shadow-sm rounded-lg aspect-square w-48 sm:w-64 md:w-72 lg:w-56 xl:w-72">
+            <div class="relative border-2 border-azure-radiance-600 drop-shadow-md rounded-lg aspect-square w-48 sm:w-64 md:w-72 lg:w-56 xl:w-72">
               <div class="p-6 w-full h-full hover:opacity-0 transition-opacity bg-white rounded-lg flex flex-col justify-end">
                 <h2 class="text-2xl sm:text-3xl font-medium">🔮<br></br>Reliable</h2>
               </div>
