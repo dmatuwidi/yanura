@@ -11,7 +11,7 @@ export default function Home() {
     setEmail(e.target.value)
     return null
   }
-  
+
   async function  handleSubmit(){
     const r = await fetch('api/mongo',{
       method:'POST',
@@ -21,8 +21,8 @@ export default function Home() {
       body: JSON.stringify({email})
     })
   }
-  
-  return (  
+
+  return (
     <>
       <Navbar/>
       <main class="h-full flex flex-col flex-auto flex-shrink-0 min-h-screen">
@@ -44,9 +44,9 @@ export default function Home() {
             <button class="mx-auto md:mx-2 my-4 md:my-0 p-3 rounded-lg w-40 drop-shadow-md bg-azure-radiance-600 hover:bg-azure-radiance-400 text-white font-semibold" onClick={handleSubmit}>Join Waitlist</button>
           </div>
         </section>
-        <section class="my-36 pt-16 mx-auto" id="features">
+        <section class="my-24 pt-16 mx-auto" id="features">
           <div class="flex justify-center align-middle">
-            <h2 class="text-6xl font-semibold">Features</h2>
+            <h2 class="text-6xl font-semibold">Our Features</h2>
             <p class="text-2xl"></p>
           </div>
           <div class="grid grid-cols-2 lg:grid-cols-4 grid-flow-row-dense gap-8 my-12 place-items-center">
@@ -77,7 +77,7 @@ export default function Home() {
               </div>
               <div class="p-6 absolute bottom-0 -z-10 w-full h-full flex flex-col justify-end">
                 <h2 class="text-2xl sm:text-3xl font-medium">Responsive</h2>
-                <p class="text-sm sm:text-md">Description summary</p>
+                <p class="text-sm sm:text-md"><span class="text-azure-radiance-600">Yanura</span> frequently searches the web, providing the latest opportunities to help find the perfect job for you.</p>
               </div>
             </div>
 
@@ -87,7 +87,7 @@ export default function Home() {
               </div>
               <div class="p-6 absolute bottom-0 -z-10 w-full h-full flex flex-col justify-end">
                 <h2 class="text-2xl sm:text-3xl font-medium">Reliable</h2>
-                <p class="text-sm sm:text-md">Description summary</p>
+                <p class="text-sm sm:text-md"><span class="text-azure-radiance-600">Yanura</span> ensures you can consistently find accurate listings and make informed career decisions confidently.</p>
               </div>
             </div>
           </div>
