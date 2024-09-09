@@ -1,10 +1,28 @@
+'use client'
 import "./globals.css"
 import Navbar from "./Navbar"
 import Footer from "./Footer"
 import Image from 'next/image'
+import { useState } from "react"
 
 export default function Home() {
-  return (
+  const [email, setEmail] = useState('')
+
+  function handlechange(e){
+    setEmail(e.target.value)
+    return null
+  }
+  
+  async function  handleSubmit(){
+    const r = await fetch('api/mongo',{
+      method:'POST',
+      headers:{
+        'Content-Type':'application/json'
+      },
+      body: JSON.stringify({email})
+    })
+  }
+  return (  
     <>
       <Navbar/>
       <main class="h-full flex flex-col flex-auto flex-shrink-0 min-h-screen">
@@ -22,8 +40,8 @@ export default function Home() {
             </h3>
           </div>
           <div class="flex flex-col md:flex-row justify-center align-middle text-xl mt-12" id="waitlist">
-            <input class="mx-auto md:mx-2 p-3 rounded-lg w-80 drop-shadow-md border-azure-radiance-600 border-2 text-lg" type="text" id="email" name="email" placeholder="Enter your e-mail"></input>
-            <button class="mx-auto md:mx-2 my-4 md:my-0 p-3 rounded-lg w-40 drop-shadow-md bg-azure-radiance-600 hover:bg-azure-radiance-400 text-white font-semibold">Join Waitlist</button>
+            <input class="mx-auto md:mx-2 p-3 rounded-lg w-80 drop-shadow-md border-azure-radiance-600 border-2 text-lg" type="text" id="email" name="email" placeholder="Enter your e-mail" value={email} onChange={handlechange}></input>
+            <button class="mx-auto md:mx-2 my-4 md:my-0 p-3 rounded-lg w-40 drop-shadow-md bg-azure-radiance-600 hover:bg-azure-radiance-400 text-white font-semibold" onClick={handleSubmit}>Join Waitlist</button>
           </div>
         </section>
       </main>
