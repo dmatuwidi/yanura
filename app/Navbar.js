@@ -1,5 +1,6 @@
 "use client"
 import React from 'react'
+import Link from 'next/link'
 
 export default function Navbar() {
   return (
@@ -11,10 +12,10 @@ export default function Navbar() {
           </div>
           <div class="flex">
             <div class="text-lg font-medium text-azure-radiance-600 hover:text-azure-radiance-400 my-auto">
-              <a href="#waitlist">Join Waitlist</a>
+              <Link href="#waitlist">Join Waitlist</Link>
             </div>
             <div class="ml-4 text-lg font-medium hover:text-gray-500 my-auto">
-              <a href="#features">Features</a>
+              <Link href="#features">Features</Link>
             </div>
           </div>
         </div>
